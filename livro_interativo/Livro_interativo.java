@@ -6,8 +6,8 @@ import java.util.Scanner;
         "aluno Victor Rodrigues, eu gostaria de informar que existem 2 tipos de\n"+
         "interação: * = Ação escolhida ou - = Fala escolhida. Ok! Era isso.\n"+
         "\nVamos começar?  -  Sim  - Nao\n");
-        Scanner start = new Scanner(System.in);
-        String init = start.nextLine();
+        Scanner começo = new Scanner(System.in);
+        String init = começo.nextLine();
         if(init.equalsIgnoreCase("sim")){
             Package livro_interativo;
         } else if(init.equalsIgnoreCase("nao")){
