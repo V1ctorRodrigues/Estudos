@@ -1,11 +1,11 @@
-public package livro_interativo;
+package livro_interativo;
 import java.util.Scanner;
  class Livro_interativo {
     public static void main(String[] args) throws Exception {
         System.out.println("Olá! Você está em um livro interativo criado pelo\n"+
         "aluno Victor Rodrigues, eu gostaria de informar que existem 2 tipos de\n"+
         "interação: * = Ação escolhida ou - = Fala escolhida. Ok! Era isso.\n"+
-        "\nVamos começar?  - Sim   - Nao\n");
+        "\nVamos começar?  -  Sim  - Nao\n");
         Scanner start = new Scanner(System.in);
         String init = start.nextLine();
         if(init.equalsIgnoreCase("sim")){
@@ -69,6 +69,4 @@ import java.util.Scanner;
         }
         }
         }
-    } Livro_interativo {
-    
-}
+    }
