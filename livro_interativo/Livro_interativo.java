@@ -65,7 +65,7 @@ import java.util.Scanner;
            "- Certo, mas cuidado com todos os perigos que aparecem sem explicação\n"+
            "por aqui. Ele sorri e espera calmamente você ir embora. Você sai da casa\n"+
            "e conforme anda percebe um sorriso inexplicavelmente macabro do seu anfitrião\n"+
-           "\n\nCONTI");
+           "\n\nCONTINUA");
         }
         }
         }
