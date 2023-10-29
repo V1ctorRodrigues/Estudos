@@ -5,8 +5,9 @@ public class personagem {
     String name;
     int pontosDeVida;
 
-}
+
 public personagem(String name, int pontosDeVida){
     this.name = name;
     this.pontosDeVida = pontosDeVida;
+    }
 }
