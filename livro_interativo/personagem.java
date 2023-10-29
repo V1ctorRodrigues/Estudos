@@ -5,7 +5,7 @@ public class personagem {
     String name;
     int pontosDeVida;
 
-
+    //Construtor da classe - testes ok
 public personagem(String name, int pontosDeVida){
     this.name = name;
     this.pontosDeVida = pontosDeVida;

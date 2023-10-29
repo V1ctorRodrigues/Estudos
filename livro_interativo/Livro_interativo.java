@@ -4,7 +4,7 @@ import java.util.Scanner;
     public static void main(String[] args) throws Exception {
         System.out.println("Olá! Você está em um livro interativo criado pelo\n"+
         "aluno Victor Rodrigues, eu gostaria de informar que existem 2 tipos de\n"+
-        "interação: * = Ação escolhida ou - = Fala escolhida. Ok! Era isso.\n"+
+        "interação: * significa Ação escolhida ou - significa Fala escolhida.\n"+
         "\nVamos começar?  -  Sim  - Nao\n");
         Scanner start = new Scanner(System.in);
         String init = start.nextLine();
@@ -16,6 +16,8 @@ import java.util.Scanner;
         }
 
         Scanner response1 = new Scanner(System.in);
+            personagem personagem1 = new personagem("Victor", 10);
+            System.out.println("Nome: " + personagem1.name+ " /" + " Pontos de vida: " + personagem1.pontosDeVida);
             System.out.println("\nBem vindo viajante! Vejo que você está perdido,\n" +
             "pelo visto iremos fazer companhia um para o outro hahaha");
             System.out.println("\n\n"+
