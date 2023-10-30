@@ -8,6 +8,9 @@ class Livro_interativo {
         String escolha2 = "NAO";
         String resposta;
 
+        //Criação de scanner
+        Scanner leitor = new Scanner(System.in);
+
         System.out.println("Olá! Você está em um livro interativo criado pelo\n" +
                 "aluno Victor Rodrigues, eu gostaria de informar\n" +
                 "que existem 2 tipos de interação nesse livro: \n" +
@@ -16,7 +19,6 @@ class Livro_interativo {
                 "\nVamos começar? -"+ escolha1 + " -" + escolha2 + "\n");
 
         //Criação de um scanner com o nome Start
-        Scanner leitor = new Scanner(System.in);
         String init = leitor.nextLine();
 
         //Começar ou não o programa
@@ -34,15 +36,15 @@ class Livro_interativo {
                 String choisecap1 = "Final 1"; // Para o final 1
                 String choise2cap1 = "Cap3"; // Para o cap3
 
-                String cap2 = "Começo do capítulo 2 - Final 1";
+                String cap2 = "Final 1";
 
                 String cap3 = "Começo do capítulo 3";
                 String choisecap3 = "Final 2"; // Para o final 2
                 String choise2cap3 = "Final 3"; // Para o final 3
 
-                String cap4 = "Começo do capítulo 4 - Final 2";
+                String cap4 = "Final 2";
 
-                String cap5 = "Começo do capítulo 4 - Final 3";
+                String cap5 = "Final 3";
 
         // Começo do Cap 1        
          System.out.println("\n" + cap1 + "\n");
