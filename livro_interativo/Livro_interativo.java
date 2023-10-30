@@ -3,16 +3,17 @@ import java.util.Scanner;
 
 class Livro_interativo {
     public static void main(String[] args) throws Exception {
+        //Escolhas para iniciar
+        String escolha1 = "SIM";
+        String escolha2 = "NAO";
+        String resposta;
+
         System.out.println("Olá! Você está em um livro interativo criado pelo\n" +
                 "aluno Victor Rodrigues, eu gostaria de informar\n" +
                 "que existem 2 tipos de interação nesse livro: \n" +
-                "'*' significa AÇÃO PARA O PERSONAGEM \n" +
+                "'*' significa AÇÃO PARA O PERSONAGEM. \n" +
                 "'-' significa FALA PARA O PERSONAGEM.\n" +
-                "\nVamos começar?  -  Sim  - Nao\n");
-        String resposta;
-        //Escolhas para iniciar
-        String escolha1 = "sim";
-        String escolha2 = "nao";
+                "\nVamos começar? -"+ escolha1 + " -" + escolha2 + "\n");
 
         //Criação de um scanner com o nome Start
         Scanner leitor = new Scanner(System.in);
