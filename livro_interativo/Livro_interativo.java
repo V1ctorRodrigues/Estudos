@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Livro_interativo {
 
         public static void mostrarTexto(String capitulo, String opcao1, String opcao2) {
-                System.out.println("\n" + capitulo + "");
+                System.out.println("\n" + capitulo + " \n");
                 System.out.println(opcao1 + " | " + opcao2 + "\n");
         }
 
