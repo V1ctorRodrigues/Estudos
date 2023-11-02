@@ -5,10 +5,16 @@ import java.util.Scanner;
 class Livro_interativo {
 
         public static void mostrarTexto(String capitulo, String opcao1, String opcao2) {
-                System.out.println("\n" + capitulo + "\n");
+                System.out.println("\n" + capitulo + "");
                 System.out.println(opcao1 + " | " + opcao2 + "\n");
         }
-        public static void capFinal(String textoFinal){
+
+        public static void pontuacaoDano(String personagem, int pontos, int pontosDeVida) {
+                System.out.println("O personagem " + personagem + " Sofreu -" +
+                                pontos + " de dano e está com: " + (pontosDeVida - pontos) + " Pontos de vida");
+        }
+
+        public static void capFinal(String textoFinal) {
                 System.out.println("\n" + textoFinal + "\n");
         }
 
@@ -40,10 +46,10 @@ class Livro_interativo {
                 }
                 // Textos para o capítulo 1
                 String cap1 = "Começo do capítulo 1";
-                String choisecap1 = "Final 1"; // Para o final 1
-                String choise2cap1 = "Cap3"; // Para o cap3
-                // Textos para o capítulo 2
-                String cap2 = "Final 1 teste";
+                String choisecap1 = "Morra"; // Para o final 1
+                String choise2cap1 = "Pular"; // Para o cap3
+                // Textos para o capítulo 2 - final 1
+                String cap2 = "Você morreu";
                 // Textos para o capítulo 3
                 String cap3 = "Começo do capítulo 3";
                 String choisecap3 = "Final 2"; // Para o final 2
@@ -52,11 +58,12 @@ class Livro_interativo {
                 String cap4 = "Final 2";
                 // Textos para o capítulo 5
                 String cap5 = "Final 3";
-
                 // Começo do Cap 1
                 mostrarTexto(cap1, choisecap1, choise2cap1);
+                personagem josefina = new personagem("Josefina", 10);
+                pontuacaoDano(josefina.name, 10, josefina.pontosDeVida);
+                System.out.print(josefina.pontosDeVida);
                 boolean escolhaValida = false;
-
                 while (!escolhaValida) {
 
                         resposta = leitor.nextLine();
@@ -73,14 +80,14 @@ class Livro_interativo {
                                 resposta = leitor.nextLine();
 
                         }
-                                // Final 2
-                                if (resposta.equalsIgnoreCase(choisecap3)) {
+                        // Final 2
+                        if (resposta.equalsIgnoreCase(choisecap3)) {
                                 capFinal(cap4);
                                 System.exit(0);
 
-                              }       
-                                // Final 3
-                                else if (resposta.equalsIgnoreCase(choise2cap3)) {
+                        }
+                        // Final 3
+                        else if (resposta.equalsIgnoreCase(choise2cap3)) {
                                 capFinal(cap5);
                                 System.exit(0);
                         }
@@ -90,7 +97,9 @@ class Livro_interativo {
                                 System.out.println("Resposta inválida, por favor escolher" +
                                                 " uma resposta que o programa mostrou");
                         }
+                        leitor.close();
                 }
-                leitor.close();
+
         }
+
 }
