@@ -49,7 +49,7 @@ class Livro_interativo {
                 String choisecap1 = "Morra"; // Para o final 1
                 String choise2cap1 = "Pular"; // Para o cap3
                 // Textos para o capítulo 2 - final 1
-                String cap2 = "Você morreu";
+                String cap2 = "\nFinal do capítulo";
                 // Textos para o capítulo 3
                 String cap3 = "Começo do capítulo 3";
                 String choisecap3 = "Final 2"; // Para o final 2
@@ -59,6 +59,7 @@ class Livro_interativo {
                 // Textos para o capítulo 5
                 String cap5 = "Final 3";
                 // Começo do Cap 1
+                personagem victor = new personagem("Victor", 10);
                 mostrarTexto(cap1, choisecap1, choise2cap1);
                 boolean escolhaValida = false;
                 while (!escolhaValida) {
@@ -67,6 +68,7 @@ class Livro_interativo {
 
                         // Final 1
                         if (resposta.equalsIgnoreCase(choisecap1)) {
+                                victor.alterarVida(-15);
                                 capFinal(cap2);
                                 System.exit(0);
                         }

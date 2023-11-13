@@ -13,7 +13,7 @@ public personagem(String name, int pontosDeVida){
 
     void alterarVida(int alteracaoVida){
         this.pontosDeVida += alteracaoVida;
-        System.out.println(this.name + "Sofreu uma perda de " + alteracaoVida);
+        System.out.println("\n"+this.name + " sofreu uma perda de " + alteracaoVida);
         if(this.pontosDeVida > 10){
             this.pontosDeVida = 10;
         }
