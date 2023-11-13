@@ -60,9 +60,6 @@ class Livro_interativo {
                 String cap5 = "Final 3";
                 // Começo do Cap 1
                 mostrarTexto(cap1, choisecap1, choise2cap1);
-                personagem josefina = new personagem("Josefina", 10);
-                pontuacaoDano(josefina.name, 10, josefina.pontosDeVida);
-                System.out.print(josefina.pontosDeVida);
                 boolean escolhaValida = false;
                 while (!escolhaValida) {
 
